@@ -133,13 +133,8 @@ export function leadForm({ docked = true, title, blurb, compact = false } = {}) 
           <i class="status-dot" aria-hidden="true"></i><span data-status-text>Mon to Fri, 9am to 5pm</span>
         </span>
       </div>
-      <form data-lead action="https://formsubmit.co/${BIZ.email}" method="POST">
+      <form data-lead action="/api/contact" method="POST">
         <input type="hidden" name="_subject" value="New roof assessment request, championroofingok.com">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="${BIZ.url}/thank-you">
-        <input type="hidden" name="_replyto" value="">
-        <input type="hidden" name="_autoresponse" value="Thanks, we have your roof assessment request. Someone from the Champion Roofing office will call you during business hours, Monday to Friday 9am to 5pm, to set a time. If it is urgent, call (405) 841-7663.">
         <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
         <!-- Three columns. Who you are first, then what you need, so the form
              reads in the order a person would actually say it out loud. -->

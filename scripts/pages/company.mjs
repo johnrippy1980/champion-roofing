@@ -541,10 +541,8 @@ ${pageHero({
             <p style="font-size:.92rem;color:var(--body-dim);margin-top:.35rem">Everything marked with a red asterisk is needed so we can get back to you. The rest just helps us turn up prepared.</p>
           </div>
         </div>
-        <form data-lead action="https://formsubmit.co/${BIZ.email}" method="POST">
+        <form data-lead action="/api/contact" method="POST">
           <input type="hidden" name="_subject" value="New roof assessment request, contact page">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
           <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="field-grid">
             <div class="field wide">
@@ -786,10 +784,8 @@ ${pageHero({
   <div class="wrap-narrow">
     <div class="lead-card">
       <div class="lead-card-head"><div>${eyebrow('Opt in')}<h2 style="font-size:var(--t-h3)">Sign up</h2></div></div>
-      <form data-lead action="https://formsubmit.co/${BIZ.email}" method="POST">
+      <form data-lead action="/api/contact" method="POST">
         <input type="hidden" name="_subject" value="New subscriber, championroofingok.com">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_captcha" value="false">
         <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="field-grid">
           <div class="field wide">

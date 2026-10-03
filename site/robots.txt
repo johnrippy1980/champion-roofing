@@ -1,3 +1,7 @@
-# Staging build. Blocked from indexing until launch.
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /subscribe
+Disallow: /sms-privacy-policy
+Disallow: /sms-terms
+
+Sitemap: https://championroofingok.com/sitemap.xml
