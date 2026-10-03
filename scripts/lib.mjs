@@ -475,6 +475,11 @@ ${body}
 </main>
 ${footer()}
 <script src="/assets/js/app.js?v=${JS_V}" defer></script>
+<!-- Vercel Web Analytics + Speed Insights (2026-10-03). Cookieless, served by
+     the host, free at this site's volume. GA4 and Clarity are added separately. -->
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};${page.path === '/thank-you' ? "va('event',{name:'lead'});" : ''}</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/_vercel/speed-insights/script.js"></script>
 </body>
 </html>`;
 }
